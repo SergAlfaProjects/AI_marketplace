@@ -1,0 +1,144 @@
+Building client
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 460B 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/nginx:alpine
+#2 DONE 1.6s
+
+#3 [internal] load metadata for docker.io/library/node:20
+#3 DONE 1.6s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 73B 0.0s done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [stage-1 1/2] FROM docker.io/library/nginx:alpine@sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10
+#6 resolve docker.io/library/nginx:alpine@sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10 0.1s done
+#6 DONE 0.1s
+
+#7 [build 1/7] FROM docker.io/library/node:20@sha256:7c4cd7c6935554b79c6fffb88e7bde3db0ce25b45d4c634d1fb0f1a6e7f5b782
+#7 resolve docker.io/library/node:20@sha256:7c4cd7c6935554b79c6fffb88e7bde3db0ce25b45d4c634d1fb0f1a6e7f5b782
+#7 resolve docker.io/library/node:20@sha256:7c4cd7c6935554b79c6fffb88e7bde3db0ce25b45d4c634d1fb0f1a6e7f5b782 0.1s done
+#7 DONE 0.1s
+
+#6 [stage-1 1/2] FROM docker.io/library/nginx:alpine@sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10
+#6 CACHED
+
+#8 [build 2/7] WORKDIR /usr/src/app
+#8 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 1.35kB 3.0s done
+#5 DONE 3.4s
+
+#9 [build 3/7] COPY package.json package-lock.json ./
+#9 DONE 0.2s
+
+#10 [build 4/7] RUN npm install ajv@8.12.0 ajv-keywords@5.1.0
+#10 23.18 npm warn deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+#10 27.27 npm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+#10 27.28 npm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+#10 29.30 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+#10 29.31 npm warn deprecated rollup-plugin-terser@7.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+#10 31.52 npm warn deprecated q@1.5.1: You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+#10 31.52 npm warn deprecated
+#10 31.52 npm warn deprecated (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
+#10 33.55 npm warn deprecated workbox-google-analytics@6.6.0: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
+#10 34.73 npm warn deprecated workbox-cacheable-response@6.6.0: workbox-background-sync@6.6.0
+#10 40.54 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+#10 41.81 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+#10 46.02 npm warn deprecated domexception@2.0.1: Use your platform's native DOMException instead
+#10 51.36 npm warn deprecated abab@2.0.6: Use your platform's native atob() and btoa() methods instead
+#10 56.01 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+#10 56.01 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+#10 57.63 npm warn deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+#10 58.32 npm warn deprecated @babel/plugin-proposal-optional-chaining@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
+#10 58.76 npm warn deprecated @babel/plugin-proposal-numeric-separator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
+#10 58.77 npm warn deprecated @babel/plugin-proposal-private-methods@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-methods instead.
+#10 58.77 npm warn deprecated @babel/plugin-proposal-nullish-coalescing-operator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
+#10 58.80 npm warn deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+#10 65.28 npm warn deprecated @babel/plugin-proposal-private-property-in-object@7.21.11: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-property-in-object instead.
+#10 78.71 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+#10 92.01 
+#10 92.01 added 1357 packages, and audited 1358 packages in 2m
+#10 92.01 
+#10 92.01 270 packages are looking for funding
+#10 92.01   run `npm fund` for details
+#10 92.05 
+#10 92.05 8 vulnerabilities (2 moderate, 6 high)
+#10 92.05 
+#10 92.05 To address all issues (including breaking changes), run:
+#10 92.05   npm audit fix --force
+#10 92.05 
+#10 92.05 Run `npm audit` for details.
+#10 92.06 npm notice
+#10 92.06 npm notice New major version of npm available! 10.8.2 -> 11.4.1
+#10 92.06 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.1
+#10 92.06 npm notice To update run: npm install -g npm@11.4.1
+#10 92.06 npm notice
+#10 DONE 94.3s
+
+#11 [build 5/7] RUN npm install --legacy-peer-deps
+#11 14.14 
+#11 14.14 removed 1 package, and audited 1357 packages in 12s
+#11 14.14 
+#11 14.14 270 packages are looking for funding
+#11 14.14   run `npm fund` for details
+#11 14.18 
+#11 14.18 8 vulnerabilities (2 moderate, 6 high)
+#11 14.18 
+#11 14.18 To address all issues (including breaking changes), run:
+#11 14.18   npm audit fix --force
+#11 14.18 
+#11 14.18 Run `npm audit` for details.
+#11 DONE 14.6s
+
+#12 [build 6/7] COPY . .
+#12 DONE 0.9s
+
+#13 [build 7/7] RUN npm run build
+#13 1.002 
+#13 1.002 > marketplace-client@1.0.0 build
+#13 1.002 > react-scripts build
+#13 1.002 
+#13 6.814 Creating an optimized production build...
+#13 39.10 Failed to compile.
+#13 39.10 
+#13 39.11 Syntax error: /usr/src/app/src/index.css Unknown word mkdir (1:1)
+#13 39.11 > 1 | mkdir -p client/src && echo "body { margin: 0; font-family: Arial; }" > client/src/index.css
+#13 39.11     | ^
+#13 39.11   2 |
+#13 39.11 
+#13 39.11 
+#13 ERROR: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+------
+ > [build 7/7] RUN npm run build:
+1.002 
+6.814 Creating an optimized production build...
+39.10 Failed to compile.
+39.10 
+39.11 Syntax error: /usr/src/app/src/index.css Unknown word mkdir (1:1)
+39.11 > 1 | mkdir -p client/src && echo "body { margin: 0; font-family: Arial; }" > client/src/index.css
+39.11     | ^
+39.11   2 |
+39.11 
+39.11 
+------
+Dockerfile:13
+--------------------
+  11 |     COPY . .
+  12 |     
+  13 | >>> RUN npm run build
+  14 |     
+  15 |     FROM nginx:alpine
+--------------------
+ERROR: failed to solve: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/q7lycei47ge6zcc8gqfnj4xtt
+Service 'client' failed to build : Build failed
