@@ -3,6 +3,11 @@
 
 
 ### Сборка и запуск
+
+1. Запустить Docker
+2. Проверить порт: `sudo lsof -i :5432`
+3. Если необходимо, освободить порт: `sudo kill -9 <PID>`
+3. В терминале из корневой папки проекта:\
  `docker-compose up --build -d` - сборка и запуск\
 `docker-compose build --no-cache client` - пересборка клиента\
  `docker-compose up -d` - перезапуск
@@ -42,3 +47,7 @@ docker-compose restart
 >
 >**Очистка системы Docker**\
 >docker system prune -a
+
+### Проверка порта
+>`sudo lsof -i :5432` - проверка порта\
+>`sudo kill -9 <PID>` - где \<PID\> - идентификатор процесса из предыдущей команды
